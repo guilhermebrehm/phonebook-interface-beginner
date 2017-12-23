@@ -13,12 +13,12 @@ $(document).ready(function() {
 function fetchNewData(callbackFunction) {
 
     $.ajax({
-        url: 'http://localhost:8080/phonebook/api',
+        url: '/phonebook/api',
         async: true,
         success: function(response) {
             phoneData = response;
             filteredData = phoneData;
-            
+
             typeof callbackFunction === 'function' && callbackFunction(filteredData);
         },
         error: function(){
