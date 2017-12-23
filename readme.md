@@ -10,4 +10,4 @@ Front-end backed by [Bootstrap](https://getbootstrap.com/).
 
 -------
 ## Running it
-To run the application, simply deploy the .war file available [here]() to tomcat. To use the application, use an internet browser and navigate to wherever you deployed it, or you can simply check it out [over here](http://52.31.253.195/phonebook) (hosted by me).
+To run the application, simply deploy the .war file available [here](https://github.com/guilhermebrehm/phonebook-interface-beginner/releases/download/v1.0.0/phonebook.war) to tomcat. To use the application, use an internet browser and navigate to wherever you deployed it, or you can simply check it out [over here](http://52.31.253.195:8080/phonebook) (hosted by me).
