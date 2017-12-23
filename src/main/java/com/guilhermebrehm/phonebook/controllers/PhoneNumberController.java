@@ -24,28 +24,4 @@ public class PhoneNumberController {
         return "phonenumbers";
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "by_name/{name}")
-    public String getPhoneNumbersByName(Model model, @PathVariable("name") String name) {
-
-        model.addAttribute("phone_numbers", phoneNumberService.searchByName(name));
-
-        return "phonenumbers";
-    }
-
-    @RequestMapping(method = RequestMethod.GET, value = "by_number/{number}")
-    public String getPhoneNumbersByNumber(Model model, @PathVariable("number") String number) {
-
-        model.addAttribute("phone_numbers", phoneNumberService.searchByPhoneNumber(number));
-
-        return "phonenumbers";
-    }
-
-    @RequestMapping(method = RequestMethod.GET, value = "by_address/{address}")
-    public String getPhoneNumbersByAddress(Model model, @PathVariable("address") String address) {
-
-        model.addAttribute("phone_numbers", phoneNumberService.searchByAddress(address));
-
-        return "phonenumbers";
-    }
-
 }
